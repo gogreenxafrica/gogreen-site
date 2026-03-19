@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gogreen Exchange — Trade It, Get Naira</title>
+<title>Gogreen Exchange Trade It, Get Naira</title>
 <meta name="description" content="Sell crypto, gift cards, CashApp and more. Get naira fast. Nigeria's trusted digital exchange. 24/7.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,700;12..96,800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
@@ -197,6 +197,18 @@ a,button,.btn-p,.btn-g,.nav-cta,.svc-btn,.faq-q,.calc-cta,.mag-wrap{
     white-space:nowrap;
   }
   
+  /* Hero section - fix overlap with nav */
+  .hero{
+    padding-top:140px !important;
+    padding-left:20px !important;
+    padding-right:20px !important;
+    grid-template-columns:1fr !important;
+    gap:40px !important;
+  }
+  .h-badge{
+    margin-top:0 !important;
+  }
+  
   /* Hero buttons */
   .btn-p{
     padding:16px 30px !important;
@@ -211,16 +223,22 @@ a,button,.btn-p,.btn-g,.nav-cta,.svc-btn,.faq-q,.calc-cta,.mag-wrap{
   .btn-g{
     padding:16px 26px !important;
     min-height:56px !important;
-    font-size:.7rem !important;
+    font-size:.75rem !important;
     display:inline-flex !important;
     align-items:center !important;
     justify-content:center !important;
     white-space:nowrap;
     width:auto !important;
+    position:relative !important;
+    z-index:100 !important;
+    background:var(--glass) !important;
+    border:1px solid var(--border) !important;
   }
   .mag-wrap{
     display:inline-block;
     width:auto !important;
+    position:relative !important;
+    z-index:100 !important;
   }
   .h-btns{
     display:flex;
@@ -1212,7 +1230,7 @@ nav { top: 46px !important; }
   <div class="champ-toast-icon">🏆</div>
   <div class="champ-toast-text">
     <span id="champToastMsg">Hold on, hold on champ.</span>
-    <span id="champToastSub">That's a vibe — but let's trade shall we?</span>
+    <span id="champToastSub">That's a vibe but let's trade shall we?</span>
   </div>
   <a href="https://wa.me/2347010975329" class="champ-toast-cta" target="_blank">Trade Now</a>
 </div>
@@ -1331,7 +1349,7 @@ nav { top: 46px !important; }
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
       <span style="font-family:'DM Sans',sans-serif;font-size:.6rem;line-height:1.6;color:rgba(245,166,35,.85);font-weight:400">Rates shown are indicative and change with market conditions. Additional fees may apply when buying from us. Confirm final rate on WhatsApp before trading.</span>
     </div>
-    <a href="#" class="calc-cta" id="calcCta" target="_blank">Trade This Amount on WhatsApp</a>
+    <a href="https://wa.me/2347010975329" class="calc-cta" id="calcCta" target="_blank">Trade This Amount on WhatsApp</a>
   </div>
 
   <button class="calc-toggle-btn" id="calcToggleBtn" onclick="toggleCalc()">
@@ -1387,7 +1405,7 @@ nav { top: 46px !important; }
       <span class="word-wrap"><span class="word word-green rotating-word" style="transition-delay:.32s" id="rotatingWord">Naira.</span></span>
       <span class="word-wrap"><span class="word" style="transition-delay:.39s">Fast.</span></span>
     </h1>
-    <p class="h-sub">Whatever digital money you carry — we turn am to naira. Sharp sharp. Crypto, gift cards, CashApp, EUR, transfers and more.</p>
+    <p class="h-sub">Whatever digital money you carry, we turn am to naira. Sharp sharp. Crypto, gift cards, CashApp, EUR, transfers and more.</p>
     <div class="h-btns">
       <span class="mag-wrap"><a href="https://wa.me/2347010975329" class="btn-p" target="_blank">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.106 1.51 5.831L.057 23.985l6.304-1.432A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.782 9.782 0 01-4.988-1.364l-.357-.212-3.743.851.865-3.646-.232-.374A9.783 9.783 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
@@ -1402,7 +1420,7 @@ nav { top: 46px !important; }
         <div class="cs-overlay">
           <div class="cs-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="display:inline;vertical-align:middle;margin-right:5px"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Coming Soon</div>
           <div class="cs-title">The Gogreen App<br>is on its way.</div>
-          <div class="cs-sub">Full exchange, transfers &amp; more — right from your phone.</div>
+          <div class="cs-sub">Full exchange, transfers &amp; more right from your phone.</div>
         </div>
         <div class="app-card" style="filter:blur(2px);pointer-events:none;user-select:none">
           <div class="app-top">Good Evening</div><div class="app-sym">₦</div>
@@ -1483,7 +1501,7 @@ nav { top: 46px !important; }
     <div class="b b-stat-cust reveal"><div class="bento-num"><span class="count-num" data-target="100" data-suffix="s">0</span></div><div class="bento-lbl">Verified Customers</div></div>
     <div class="b b-stat-fast reveal"><div class="bento-num" style="background:linear-gradient(135deg,#89CE33,#2DA437);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Fast</div><div class="bento-lbl">Settlement in Minutes</div></div>
     <div class="b b-tagline b-glass reveal" style="display:flex;flex-direction:column;justify-content:flex-end">
-      <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(13px,1.3vw,16px);font-weight:500;color:var(--muted2);line-height:1.6;font-style:italic">"Whatever digital money you carry — we move am."</div>
+      <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(13px,1.3vw,16px);font-weight:500;color:var(--muted2);line-height:1.6;font-style:italic">"Whatever digital money you carry we move am."</div>
       <div style="margin-top:8px;font-family:'Bricolage Grotesque',sans-serif;font-size:.58rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:linear-gradient(90deg,#89CE33,#2DA437);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Gogreen Exchange</div>
     </div>
   </div>
@@ -1494,7 +1512,7 @@ nav { top: 46px !important; }
   <div class="trust-pill reveal"><div class="trust-pill-num" style="font-size:.85rem;letter-spacing:.02em">™</div><div class="trust-pill-label">Fully Trademarked</div></div>
 </div>
 
-<!-- GIANT MARQUEE — unique execution: ghost gradient text, faded edges -->
+<!-- GIANT MARQUEE unique execution: ghost gradient text, faded edges -->
 <div class="marquee-band">
   <div class="marquee-track">
     <span class="marquee-item">TRADE IT</span><span class="marquee-sep">·</span>
@@ -1523,7 +1541,7 @@ nav { top: 46px !important; }
       <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="16" r="1" fill="currentColor"/></svg></div>
       <div class="feat-tag">Trust & Safety</div>
       <div class="feat-title">CAC Registered &amp; Trademarked</div>
-      <div class="feat-body">CAC registered, trademarked. 50+ proofs on Instagram. Your money dey safe — no dulling.</div>
+      <div class="feat-body">CAC registered, trademarked. 50+ proofs on Instagram. Your money dey safe no dulling.</div>
     </div>
     <div class="feat-card feat-cream reveal">
       <div class="feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
@@ -1535,7 +1553,7 @@ nav { top: 46px !important; }
       <div class="feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
       <div class="feat-tag">Coverage</div>
       <div class="feat-title">Any Currency. Any Country.</div>
-      <div class="feat-body">EUR, USD, UK, Canada, India and more. If digital money dey anywhere for this earth — Gogreen go move am.</div>
+      <div class="feat-body">EUR, USD, UK, Canada, India and more. If digital money dey anywhere for this earth Gogreen go move am.</div>
     </div>
   </div>
 </section>
@@ -1570,7 +1588,7 @@ nav { top: 46px !important; }
     <h2 class="reveal-text" style="margin-bottom:36px"><span class="word-wrap"><span class="word" style="transition-delay:0s">Three</span></span> <span class="word-wrap"><span class="word" style="transition-delay:.07s">steps.</span></span><br><span class="word-wrap"><span class="word" style="transition-delay:.14s">That's</span></span> <span class="word-wrap"><span class="word" style="transition-delay:.21s">it.</span></span></h2>
     <div class="how-steps">
       <div class="how-step reveal-l"><div class="sn">01</div><div class="sb"><h3>Tell Us Wetin You Get</h3><p>Send us the asset type, amount and your bank details on WhatsApp. No sign-up, no form.</p></div></div>
-      <div class="how-step reveal-l"><div class="sn">02</div><div class="sb"><h3>We Verify Am</h3><p>We confirm your transaction before anything moves. Every trade checked — no rushing.</p></div></div>
+      <div class="how-step reveal-l"><div class="sn">02</div><div class="sb"><h3>We Verify Am</h3><p>We confirm your transaction before anything moves. Every trade checked no rushing.</p></div></div>
       <div class="how-step reveal-l"><div class="sn">03</div><div class="sb"><h3>E Don Enter</h3><p>Naira lands straight in your account. Fast settlement, zero hidden charges. That's the Gogreen way.</p></div></div>
     </div>
   </div>
@@ -1612,13 +1630,13 @@ nav { top: 46px !important; }
   <span class="sec-tag">FAQ</span>
   <h2 class="reveal-text"><span class="word-wrap"><span class="word" style="transition-delay:0s">Got</span></span> <span class="word-wrap"><span class="word" style="transition-delay:.07s">Questions?</span></span><br><span class="word-wrap"><span class="word" style="transition-delay:.14s">We</span></span> <span class="word-wrap"><span class="word" style="transition-delay:.21s">Got</span></span> <span class="word-wrap"><span class="word" style="transition-delay:.28s">You.</span></span></h2>
   <div class="faq-list">
-    <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)"><span>I have trust issues. Is Gogreen legit?</span><svg class="faq-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">We understand — plenty scam dey outside. But Gogreen is CAC-registered under Purplegreen Investment Limited. Check <a href="https://instagram.com/gogreenxafrica" target="_blank">@gogreenxafrica</a> on Instagram — 50+ real proofs of real deals. No pressure, whenever you ready, we dey here.</div></div>
-    <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)"><span>Do you buy BTC and other crypto?</span><svg class="faq-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Yes — BTC, USDT, ETH and more. Send the asset type and amount on WhatsApp, we go give you live rate immediately. Once your coins land, we pay. E no hard.</div></div>
+    <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)"><span>I have trust issues. Is Gogreen legit?</span><svg class="faq-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">We understand plenty scam dey outside. But Gogreen is CAC-registered under Purplegreen Investment Limited. Check <a href="https://instagram.com/gogreenxafrica" target="_blank">@gogreenxafrica</a> on Instagram 50+ real proofs of real deals. No pressure, whenever you ready, we dey here.</div></div>
+    <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)"><span>Do you buy BTC and other crypto?</span><svg class="faq-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Yes BTC, USDT, ETH and more. Send the asset type and amount on WhatsApp, we go give you live rate immediately. Once your coins land, we pay. E no hard.</div></div>
     <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)"><span>How fast is payment?</span><svg class="faq-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Instant after confirmation. No delay, no story. We move faster than your bank fit blink.</div></div>
     <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)"><span>What's the process? Step by step.</span><svg class="faq-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">(1) Send wetin you get + amount on WhatsApp. (2) Collect live rate + wallet address. (3) Send your funds. (4) Alert enter. Simple as that.</div></div>
-    <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)"><span>Do you accept PayPal and digital wallets?</span><svg class="faq-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Yes — PayPal, CashApp, Chime, Apple Pay, Venmo, GCash, Revolut, Skrill, Neteller, e-Transfer and plenty more. You get one wey you no see? Just ask — we probably accept am.</div></div>
-    <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)"><span>Which countries do you cover for transfers?</span><svg class="faq-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">EUR/SEPA, UK, US, Canada, Australia, Mexico, India, Indonesia, Philippines, Ukraine, Russia and many more. Name the country — chances are we dey cover am.</div></div>
-    <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)"><span>Where are you located?</span><svg class="faq-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Based in Abeokuta, Ogun State — but we dey everywhere online. Nationwide and worldwide. Hit us on WhatsApp: 07010975329 or find us @gogreenxafrica on any platform.</div></div>
+    <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)"><span>Do you accept PayPal and digital wallets?</span><svg class="faq-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Yes PayPal, CashApp, Chime, Apple Pay, Venmo, GCash, Revolut, Skrill, Neteller, e-Transfer and plenty more. You get one wey you no see? Just ask we probably accept am.</div></div>
+    <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)"><span>Which countries do you cover for transfers?</span><svg class="faq-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">EUR/SEPA, UK, US, Canada, Australia, Mexico, India, Indonesia, Philippines, Ukraine, Russia and many more. Name the country chances are we dey cover am.</div></div>
+    <div class="faq-item reveal"><button class="faq-q" onclick="toggleFaq(this)"><span>Where are you located?</span><svg class="faq-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Based in Abeokuta, Ogun State but we dey everywhere online. Nationwide and worldwide. Hit us on WhatsApp: 07010975329 or find us @gogreenxafrica on any platform.</div></div>
   </div>
 </section>
 
@@ -1686,7 +1704,7 @@ nav { top: 46px !important; }
       document.body.classList.remove('intro-lock');
     }, 600);
   }, 1100);
-  // after 5s if still on screen — swap spinner for WhatsApp button
+  // after 5s if still on screen swap spinner for WhatsApp button
   setTimeout(function(){
     if(overlay.style.display==='none') return;
     if(spinner) spinner.style.display='none';
@@ -1695,11 +1713,29 @@ nav { top: 46px !important; }
 })();
 
 // ── FLOATING RATE CALCULATOR ──
-var BUY_RATE     = 1388;  // fallback — overwritten by backend
-var SELL_RATE    = 1489;  // fallback — overwritten by backend
-var WHATSAPP_NUM = '2347010975329';  // fallback — overwritten by backend
+var BUY_RATE     = 1388;  // fallback overwritten by backend
+var SELL_RATE    = 1489;  // fallback overwritten by backend
+var WHATSAPP_NUM = '2347010975329';  // fallback overwritten by backend
 var calcMode  = 'buy';
 var calcOpen  = false;
+
+function updateRateDisplay() {
+  var buys = document.querySelectorAll('.rate-buy');
+  var sells = document.querySelectorAll('.rate-sell');
+  buys.forEach(function(el){ el.textContent = '\u20A6' + BUY_RATE.toLocaleString() + '/$'; });
+  sells.forEach(function(el){ el.textContent = '\u20A6' + SELL_RATE.toLocaleString() + '/$'; });
+  
+  // Update calculator display
+  var rateDisplay = document.querySelector('.calc-rate-val');
+  if (rateDisplay) {
+    rateDisplay.textContent = '\u20A6' + (calcMode === 'buy' ? BUY_RATE : SELL_RATE).toLocaleString() + ' / $';
+  }
+  
+  // Update banner
+  var bannerItems = document.querySelectorAll('.ticker-num');
+  if (bannerItems[0]) bannerItems[0].textContent = '\u20A6' + BUY_RATE.toLocaleString() + '/$';
+  if (bannerItems[1]) bannerItems[1].textContent = '\u20A6' + SELL_RATE.toLocaleString() + '/$';
+}
 
 
 // ── CMS CONTENT LOADER ──
@@ -1710,15 +1746,12 @@ function applyContent(data) {
   var s = data.settings || {};
 
   // ── Rates & WhatsApp ──
-  if (s.buy_rate)  BUY_RATE  = parseInt(s.buy_rate);
+  if (s.buy_rate)  BUY_RATE = parseInt(s.buy_rate);
   if (s.sell_rate) SELL_RATE = parseInt(s.sell_rate);
   if (s.wa_number) WHATSAPP_NUM = s.wa_number;
 
   // ── Rate banner ──
-  var buys = document.querySelectorAll('.rate-buy');
-  var sells = document.querySelectorAll('.rate-sell');
-  buys.forEach(function(el){  el.textContent = '\u20A6' + BUY_RATE.toLocaleString()  + '/$'; });
-  sells.forEach(function(el){ el.textContent = '\u20A6' + SELL_RATE.toLocaleString() + '/$'; });
+  updateRateDisplay();
 
   // ── WhatsApp links ──
   document.querySelectorAll('a[href*="wa.me"]').forEach(function(a){
@@ -1783,7 +1816,7 @@ function applyContent(data) {
 
   // ── CTA ──
   var ctaH = document.querySelector('.cta-section h2');
-  // We don't overwrite word-reveal headings — too complex. Skip hero/cta headings for now.
+  // We don't overwrite word-reveal headings too complex. Skip hero/cta headings for now.
 
   // ── Footer copyright ──
   var fc = document.querySelector('.f-left');
@@ -2015,7 +2048,7 @@ var champShown = false;
 var champMessages = [
   { msg: 'Hold on, hold on champ.', sub: "Pick a vibe and let's trade shall we? 😂" },
   { msg: 'Oya calm down.', sub: "The themes aren't going anywhere. Let's make money." },
-  { msg: 'E don do.', sub: 'You don test am well well. Now — trade time.' },
+  { msg: 'E don do.', sub: 'You don test am well well. Now trade time.' },
   { msg: 'Both themes dey fine, we know.', sub: "But your naira dey wait. Let's go." },
   { msg: 'Champ you dey enjoy yourself.', sub: "We see you. Now come let's trade 🤝" },
 ];
@@ -2448,25 +2481,25 @@ function toggleFaq(btn){
     var color1 = toLight ? '#89CE33' : '#fff';
     var color2 = toLight ? '#2DA437' : 'rgba(255,255,255,.5)';
 
-    // Phase 1 — sparks + runes burst immediately
+    // Phase 1 sparks + runes burst immediately
     spawnSparks(x, y, color1, color2, 18);
     spawnRunes(x, y, toLight);
     spawnRings(x, y, color1);
 
-    // Phase 2 — flash
+    // Phase 2 flash
     setTimeout(function(){ spawnFlash(x, y); }, 40);
 
-    // Phase 3 — ripple
+    // Phase 3 ripple
     setTimeout(function(){
       var ripple = spawnRipple(x, y, toLight);
 
-      // Phase 4 — swap theme almost immediately
+      // Phase 4 swap theme almost immediately
       setTimeout(function(){
         callback();
         spawnSparks(x, y, color1, color2, 8);
       }, 80);
 
-      // Phase 5 — fade out ripple fast
+      // Phase 5 fade out ripple fast
       setTimeout(function(){
         ripple.style.opacity = '0';
         setTimeout(function(){
