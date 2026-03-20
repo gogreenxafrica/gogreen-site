@@ -1349,8 +1349,6 @@ nav { top: 46px !important; }
 </div>
 
 
-
-
 <!-- CHAMP TOAST -->
 <div class="champ-toast" id="champToast">
   <div class="champ-toast-icon">🏆</div>
@@ -1360,75 +1358,6 @@ nav { top: 46px !important; }
   </div>
   <a href="https://wa.me/2347010975329" class="champ-toast-cta" target="_blank">Trade Now</a>
 </div>
-
-<!-- ADMIN PANEL -->
-<div class="admin-backdrop" id="adminBackdrop" onclick="closeAdmin()"></div>
-<div class="admin-panel" id="adminPanel">
-  <!-- Password Gate -->
-  <div id="adminGate">
-    <div class="admin-top" style="margin-bottom:20px">
-      <div class="admin-title">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#89CE33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="16" r="1" fill="currentColor"/></svg>
-        Restricted Access
-        <span class="admin-badge">Owner Only</span>
-      </div>
-      <button class="admin-close" onclick="closeAdmin()">✕</button>
-    </div>
-    <div style="text-align:center;padding:10px 0 24px">
-      <div style="width:48px;height:48px;background:rgba(45,164,55,.1);border:1px solid rgba(45,164,55,.25);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#89CE33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="16" r="1" fill="currentColor"/></svg>
-      </div>
-      <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:.88rem;font-weight:800;color:#fff;margin-bottom:6px">Enter Admin Password</div>
-      <div style="font-size:.65rem;color:rgba(255,255,255,.3);margin-bottom:20px;font-family:'DM Sans',sans-serif">This panel is for authorised use only.</div>
-      <input id="adminPassInput" type="password" class="admin-input" placeholder="••••••••"
-        style="text-align:center;letter-spacing:.2em;margin-bottom:10px"
-        onkeydown="if(event.key==='Enter')checkAdminPass()" />
-      <div id="adminPassError" style="font-family:'Bricolage Grotesque',sans-serif;font-size:.6rem;font-weight:700;color:#e74c3c;letter-spacing:.08em;height:16px;margin-bottom:10px;opacity:0;transition:opacity .3s">Wrong password. Try again.</div>
-      <button class="admin-save" onclick="checkAdminPass()" style="margin-top:0">Unlock Panel</button>
-    </div>
-  </div>
-
-  <!-- Admin Content (hidden until unlocked) -->
-  <div id="adminContent" style="display:none">
-  <div class="admin-top">
-    <div class="admin-title">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#89CE33" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/></svg>
-      Admin Settings
-      <span class="admin-badge">Owner Only</span>
-    </div>
-    <button class="admin-close" onclick="closeAdmin()">✕</button>
-  </div>
-  <div class="admin-hint">Changes apply instantly and save to this browser. Redeploy the file to make them permanent.</div>
-
-  <div class="admin-section">
-    <div class="admin-section-title">Crypto Rates (USDT/NGN)</div>
-    <div class="admin-row">
-      <div class="admin-field">
-        <span class="admin-label">We Buy (₦ per $)</span>
-        <input class="admin-input" id="adminBuyRate" type="number" placeholder="1388" />
-      </div>
-      <div class="admin-field">
-        <span class="admin-label">We Sell (₦ per $)</span>
-        <input class="admin-input" id="adminSellRate" type="number" placeholder="1489" />
-      </div>
-    </div>
-  </div>
-
-  <div class="admin-section">
-    <div class="admin-section-title">Contact</div>
-    <div class="admin-row">
-      <div class="admin-field full">
-        <span class="admin-label">WhatsApp Number (with country code)</span>
-        <input class="admin-input" id="adminWaNum" type="text" placeholder="2347010975329" />
-      </div>
-    </div>
-  </div>
-
-  <button class="admin-save" onclick="saveAdmin()">Save & Apply Changes</button>
-  <div class="admin-saved-msg" id="adminSavedMsg">✦ Changes Applied Successfully</div>
-  <div class="admin-shortcut">Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd> to open this panel</div>
-  </div><!-- end adminContent -->
-</div><!-- end adminPanel -->
 
 <!-- FLOATING RATE CALCULATOR -->
 <div class="calc-float" id="calcFloat">
